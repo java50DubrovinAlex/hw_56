@@ -321,5 +321,11 @@ class CarsControllerTest {
 				.andExpect(status().isBadRequest()).andReturn().getResponse().getContentAsString();
 		assertEquals(expectedMessage, response);
 	}
+	@Test
+	void testMostPopularModels() throws Exception{
+		String response = mockMvc.perform(get("http://localhost:8080/cars/model" + WRONG_PERSON_ID_TYPE))
+				.andExpect(status().isBadRequest()).andReturn().getResponse().getContentAsString();
+		assertEquals(CarsExceptionsController.TYPE_MISMATCH_MESSAGE, response);
+	}
 	
 }
