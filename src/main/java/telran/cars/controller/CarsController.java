@@ -31,7 +31,7 @@ import telran.cars.dto.*;
 public class CarsController {
 	final CarsService carsService;
 	@PostMapping
-	CarDto addCar(@RequestBody @Valid CarDto carDto) {
+	CarDto addCar(@RequestBody @Valid @NotNull CarDto carDto) {
 		//annotation @RequstBody informs Spring about conversion of JSON inside a request to the given parameter
 		log.debug("addCar: received car data: {}", carDto);
 		return carsService.addCar(carDto);

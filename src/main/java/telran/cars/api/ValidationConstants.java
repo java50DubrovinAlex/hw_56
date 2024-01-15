@@ -16,4 +16,17 @@ public interface ValidationConstants {
 	String WRONG_DATE_FORMAT = "Wrong date format, must be YYYY-MM-dd";
 	String MISSING_PERSON_EMAIL = "Missing email address";
 	String WRONG_EMAIL_FORMAT = "Wrong email format";
+	String MISS_CAR_COLOR_MESSAGE = "Missing car color";
+	String MISS_CAR_KILOMETERS_MESSAGE = "Missing car kilometers";
+	String MISS_CAR_STATE_MESSAGE = "Missing car state";
+	String MISSING_CAR_MODEL_YEAR_MESSAGE = "Missing car model year";
+	int MIN_CAR_MODEL_YEAR_VALUE = 1970;
+	int MAX_CAR_MODEL_YEAR_VALUE = 2023;
+	String WRONG_MIN_MODEL_YEAR_VALUE = "Model year must be greater or equal " + MIN_CAR_MODEL_YEAR_VALUE;
+	String WRONG_MAX_MODEL_YEAR_VALUE = "Model year must be less or equal " + MAX_CAR_MODEL_YEAR_VALUE;
+	String MISSING_CAR_COMPANY_MESSAGE = "Missing car company";
+	String MISSING_CAR_ENGINE_CAPACITY_MESSAGE = "Missing car engine capacity";
+	String MISSING_CAR_ENGINE_POWER = "Missing car engine power";
+	String MISSING_TRADE_DEAL_DATE_MESSAGE = "Missing trade deal date";
+	
 }
